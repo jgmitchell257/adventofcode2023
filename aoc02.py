@@ -38,7 +38,7 @@ def remove_invalid(game_data):
                     maybe_valid = False
                 if int(n[0]) > 13 and n[1] == "green":
                     maybe_valid = False
-                
+
         if maybe_valid:
             check.append(game)
     return check
@@ -59,6 +59,7 @@ check_possible(possible)
 
 # Part 2
 # Find the minimum cubes for each reveal
+
 
 def get_cubes(game_data):
     total_sum_of_powers = 0
@@ -83,5 +84,6 @@ def get_cubes(game_data):
                         green = count
         total_sum_of_powers = total_sum_of_powers + (red * blue * green)
     print(total_sum_of_powers)
+
 
 get_cubes(game_data)
